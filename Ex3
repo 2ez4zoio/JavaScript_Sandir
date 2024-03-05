@@ -1,0 +1,14 @@
+<script type="text/javascript">
+valores = [];
+valores.push(4.549, 5.449, 2.119, 4.099, 3.768);
+
+var atual = valores[0];
+var mais_barato = valores[0];
+
+for(i = 0; i <= 4; i++ ){
+
+	console.log(valores[i]);
+}
+
+
+</script>
