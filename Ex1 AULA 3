@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	
+ times = [];
+ times.push('flamengo', 'vasco', 'fluminense');
+
+
+console.log(times);
+console.log(times.length);
+console.log(Object.keys(times));
+
+times[8] = 'botafogo';
+console.log(times);
+console.log(times.length);
+console.log(Object.keys(times));
+
+times.length = 15;
+console.log(times);
+console.log(times.length);
+console.log(Object.keys(times));
+
+times.length = 2;
+console.log(times);
+console.log(times.length);
+console.log(Object.keys(times));
+
+</script>
