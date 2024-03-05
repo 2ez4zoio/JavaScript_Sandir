@@ -1,0 +1,21 @@
+<meta charset="UFT-8">
+<script>
+    function mostra(mensagem){
+    	document.write(mensagem);
+    }
+    function caculo (a,b){
+    	var soma= a + b ;
+    	return soma ;
+    }
+    function calculo (a,b){
+    	var divisao = match round (a/b);
+    }
+
+    var numero1 = pronpt ("digite um numero: ");
+    var numero2 = pronpt ("digite o segundo numero ");
+
+    soma =caculo1(numero1,numero2);
+    divisao=calculo2(numero1,numero2);
+
+    mostra("A soma dos numeros sao: " +soma+ "A divisao dos numeros sao" + divisao);
+</script>
