@@ -1,0 +1,65 @@
+function pula() {
+    document.write("<br>");
+}
+
+function texto(txt) {
+    document.write(txt);
+    document.write("<br>");
+}
+
+//string
+var nome = "Maria";
+var mensagem = "voltou!";
+
+//number
+var idade = 25;
+var altura = 1.65;
+
+//boolean
+var aprovado = true;
+var reprovado = false;
+
+//undifined
+var valorNaoInicializado;
+var valorNulo = null;
+
+document.write(nome);
+pula();
+
+const listaNumeros = [8, 12, 5, 92, 3, 7];
+const listaFrutas = ["uva", "kiwi", "abacaxi"];
+
+document.write(listaFrutas);
+pula();
+
+console.log(listaFrutas.length);
+pula();
+
+var adicionar = listaFrutas.push("pêssego");
+
+document.write(listaFrutas);
+console.log(listaFrutas.length);
+pula();
+
+var ultimo = listaFrutas.pop(); // remove pêssego (do final)
+
+document.write(listaFrutas);
+console.log(listaFrutas.length);
+pula();
+
+var frutas = ["Coco", "Papaya", "Figo", "Açaí", "Mamão", "Caqui", "Pitanga", "Guaraná", "Acerola", "Jambo", "Nectarina", "Manga", "Carambola", "Pêra", "Romã", "Jabuticaba", "Caju", "Amora", "Maracujá", "Figo", "Tamarindo"];
+
+var retirarUltimo = function () {
+    frutas.pop();
+}
+
+texto(frutas);
+retirarUltimo();
+texto(frutas);
+retirarUltimo();
+texto(frutas);
+retirarUltimo();
+texto(frutas);
+retirarUltimo();
+texto(frutas);
+retirarUltimo();
