@@ -1,0 +1,118 @@
+// Tipos de dados
+const nome = "João";
+const mensagem = "voltou";
+const idade = 20;
+const altura = 1.55;
+const aprovado = true;
+const reprovado = false;
+let valorNaoInicializado;
+const valorNulo = null;
+
+document.write(nome + "<br>");
+
+// Arrays
+const listaNumeros = [4, 6, 2, 77, 1, 0];
+const listaFrutas = ["banana", "maçã", "pera"];
+document.write(listaFrutas.join(", ") + "<br>");
+
+// Contagem de elementos nas listas
+document.write(listaFrutas.length + "<br>");
+
+// Criar uma lista de números de 1 a 50
+const lista = [];
+for (let i = 1; i <= 50; i++) {
+    lista.push(i);
+}
+document.write(lista.length + "<br>");
+
+const lista2 = ["banana", "pera", "maça", "uva", "melancia"];
+document.write(lista2.length + "<br>");
+
+// Acesso a itens na lista
+const primeiro = listaFrutas[0];
+const ultimo = listaFrutas[listaFrutas.length - 1];
+document.write(primeiro + "<br>");
+document.write(ultimo + "<br>");
+
+// Acesso a números específicos na lista
+const item1 = lista[24];
+const item2 = lista[38];
+const item3 = lista[41];
+document.write(item1 + "<br>");
+document.write(item2 + "<br>");
+document.write(item3 + "<br>");
+
+// forEach para percorrer toda a lista
+lista2.forEach((item, indice) => {
+    console.log(item, indice);
+});
+
+function tabuadaDe2(item) {
+    console.log(item * 2);
+}
+
+lista.forEach(tabuadaDe2);
+
+let total = 0;
+function somar(item) {
+    total += item;
+}
+lista.forEach(somar);
+document.write(total + "<br>");
+
+// Adicionar e remover itens nas listas
+listaFrutas.push("Laranja");
+document.write(listaFrutas.join(", ") + "<br>");
+
+lista2.push("abacaxi");
+document.write(lista2.join(", ") + "<br>");
+
+const ultimoRemovido = lista2.pop();
+document.write(lista2.join(", ") + "<br>");
+
+const primeiroRemovido = lista2.shift();
+document.write(lista2.join(", ") + "<br>");
+
+listaFrutas.unshift('morango');
+document.write(listaFrutas.join(", ") + "<br>");
+
+listaFrutas.unshift('abacaxi');
+document.write(listaFrutas.join(", ") + "<br>");
+
+// Remover itens a partir de uma posição de índice
+const frutas1 = ['maça', 'banana', 'pera'];
+document.write(frutas1.join(", ") + "<br>");
+
+const removerLocalItem = 1;
+const removerItem = frutas1.splice(removerLocalItem, 1);
+
+document.write(removerItem + "<br>");
+
+// Mostrar a posição dos itens em uma lista
+const frutas2 = ['morango', 'banana', 'pera', 'maça', 'uva', 'melancia', 'abacaxi'];
+document.write(frutas2.join(", ") + "<br>");
+
+const removerLocalItem2 = 0;
+const removerItem2 = frutas2.splice(removerLocalItem2, 1);
+document.write(removerItem2 + "<br>");
+
+// Copiar um Array
+const copiar = frutas2.slice();
+
+// Acessar elementos de um Array
+const array = ['este é o primeiro elemento', 'Este é o segundo elemento'];
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[array.length - 1]);
+
+// Mostrar o primeiro e o último elemento da lista frutas2
+document.write("Primeiro elemento: " + frutas2[0] + "<br>");
+document.write("Último elemento: " + frutas2[frutas2.length - 1] + "<br>");
+
+// Unir dois Arrays (merge)
+const array1 = [1, 2];
+const array2 = [3, 4];
+const array3 = array1.concat(array2);
+console.log(array3);
+
+const listaDoMatheus = ["lista do Matheus", "Ana", "Pedro", "Maria", "João", "Carla", "Matheus", "Beatriz", "Marcos", "Laura", "Fernando", "Camila", "Rafael", "Juliana", "Lucas", "Mariana", "Gustavo", "Patrícia", "Diego", "Amanda", "Renato", "Isabela", "Rodrigo", "Caroline", "Tiago", "Natália", "Felipe", "Tatiana", "André", "Vanessa", "Hugo", "Bianca", "Daniel", "Vitória", "Roberto", "Gabriela", "Alexandre", "Larissa"];
