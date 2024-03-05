@@ -1,0 +1,45 @@
+// Declarando e inicializando uma array de frutas
+var frutas = ['maçã', 'banana', 'pêssego'];
+
+// Exibindo a quantidade de elementos na array
+console.log("Quantidade de elementos na array: " + frutas.length);
+
+// Exibindo os índices com conteúdo na array
+console.log("Índices com conteúdo: " + Object.keys(frutas));
+
+// Adicionando um item no índice 5 da array
+frutas[5] = 'manga';
+
+// Exibindo o conteúdo do índice 5
+console.log("Conteúdo do índice 5: " + frutas[5]);
+
+// Exibindo os índices com conteúdo após a adição
+console.log("Índices com conteúdo após adição: " + Object.keys(frutas));
+
+// Exibindo a quantidade de índices (com e sem conteúdo)
+console.log("Quantidade de índices: " + frutas.length);
+
+// Aumentando a quantidade de índices para 10 (0-9)
+frutas.length = 10;
+
+// Exibindo a nova quantidade de índices
+console.log("Nova quantidade de índices (após aumento): " + frutas.length);
+
+// Diminuindo a quantidade de índices para 2
+frutas.length = 2;
+
+// Exibindo os índices com conteúdo após a redução
+console.log("Índices com conteúdo após redução: " + Object.keys(frutas));
+
+// Exibindo a quantidade de índices após a redução
+console.log("Quantidade de índices após redução: " + frutas.length);
+
+// Adicionando mais frutas como exemplo
+frutas[6] = 'laranja';
+frutas[7] = 'uva';
+
+// Exibindo os índices com conteúdo após adição de mais frutas
+console.log("Índices com conteúdo após adição de mais frutas: " + Object.keys(frutas));
+
+// Exibindo a quantidade de índices (com e sem conteúdo) após adição de mais frutas
+console.log("Quantidade de índices após adição de mais frutas: " + frutas.length);
