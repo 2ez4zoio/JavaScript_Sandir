@@ -1,0 +1,24 @@
+<!DOCTYPE html> // 06
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>Calculadora de Média</h1>
+
+    <script>
+        var numeros = [12, 46, 28, 8, 10];
+        var soma = 0;
+        for (var i = 0; i < numeros.length; i++) {
+            soma += numeros[i];
+        }
+
+        var media = soma / numeros.length;
+
+            document.write("<p>Array de números: [" + numeros.join(", ") + "]</p>");
+            document.write("<p>A média dos números é: " + media.toFixed(2) + "</p>");
+
+     </script>  
+
+</body>
+</html>
