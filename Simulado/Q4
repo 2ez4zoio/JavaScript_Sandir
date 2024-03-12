@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Álcool ou Gasolina?</title>
+
+</head>
+<body>
+    <h1>Álcool ou Gasolina?</h1>
+
+    <script>
+        var tanquePunto = 65; 
+        var distanciaGasolina = 620; 
+        var valorGasolina = 8;
+        var consumoGPunto = distGasolina / tanquePunto;
+
+
+        document.write("<p>Consumo de Gasolina do Punto: " + consumoGasolinaPunto.toFixed(2) + " km/l</p>");
+
+
+        var tanqueFocus = 45; 
+        var distanciaAlcool = 480; 
+        var valorAlcool = 7;
+        var consumoAFocus = distAlcool / tanqueFocus;
+
+        document.write("<p>Consumo de Álcool do Focus: " + consumoAlcoolFocus.toFixed(2) + " km/l</p>");
+
+        var distanciaTotal = 1000;
+        var custoPunto = (distTotal / consumoGPunto) * valorGasolina;
+        var custoFocus = (distTotal / consumoAFocus) * valorAlcool;
+
+        document.write("<p>Custo para rodar 1000 km com o Punto: R$" + custoPunto.toFixed(2) + "</p>");
+        document.write("<p>Custo para rodar 1000 km com o Focus: R$" + custoFocus.toFixed(2) + "</p>");
+    </script>
+
+</body>
+</html>
