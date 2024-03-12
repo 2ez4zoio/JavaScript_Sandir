@@ -1,0 +1,21 @@
+<!DOCTYPE html> //Q18
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>INSERINDO NO MEIO DA LISTA</h1>
+
+    <script>
+        var numeros = [90, 70, 50, 80, 60, 85];
+        var numeroInserir = 75;
+        var posicaoInserir = 2;
+        
+        numeros.splice(posicaoInserir, 0, numeroInserir);
+
+        document.write("Numeros antes de inserir o 75: " + numeros + "<br>");
+        document.write("Array após a inserção: [" + numeros.join(", ") + "]");
+    </script>
+
+</body>
+</html>
