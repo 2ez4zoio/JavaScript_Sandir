@@ -1,0 +1,18 @@
+<!DOCTYPE html> //Q20
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>SEQUENCIA ORIGINAL E ORDENADA</h1>
+
+    <script>
+        var numOriginais = [5, 2, 8, 1, 4, 7];
+        var numOrdenados = numOriginais.slice().sort((a, b) => a - b);
+
+        document.write("ORIGINAL: " + numOriginais.join(', ') + "<br>");
+        document.write("ORDENADA: " + numOrdenados.join(', '));
+    </script>
+
+</body>
+</html>
