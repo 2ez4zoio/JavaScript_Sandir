@@ -1,0 +1,154 @@
+<head>
+	<meta charset="UTF-8">
+	<title> Simulado </title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+
+	function pulalinha(){document.write("<br>")};
+	
+	function mostra(a){document.write(a)};
+
+	function pontosatual(pontosatual){
+
+		return (v*3) + (d*0) + (e*1)
+
+	};
+
+	function percentual(percentual) {
+
+		return p2 
+
+
+	};
+
+	function pontoles(pontoles){
+
+		return pl3
+	};
+
+
+	function cartao(cartao){
+
+		return c4 
+	}
+
+
+
+
+
+	var n = prompt("Digite o nome do seu time: ");
+
+
+	var v = parseInt(prompt("Digite a quantidade de vitórias do seu time: "));
+
+
+	var e = parseInt(prompt("Digite a quantidade de empates do seu time: "));
+
+
+	var d = parseInt(prompt("Digite a quantidade de derrotas do seu time: "));
+
+
+	var l = parseInt(prompt("Digite a quatidade de lesionados do seu time: "));
+
+
+	var ca = parseInt(prompt("Digite a quantidade de cartões amarelos do seu time: "));
+
+
+
+	var cv = parseInt(prompt("Digite a quantidade de cartões vermelhos do seu time: "));
+
+
+	var pfc = Number(prompt("Digite a posição do seu time no final do campeonato: "));
+
+
+
+	var la= parseInt(prompt("Digite a quantidade de lesionados do seu time em relação ao  ano anterior: "));
+
+
+
+	var caa = parseInt(prompt("Digite a quantidade de cartões amarelos do seu time em relação ao ano anterior:  "));
+
+
+
+	var cvv= parseInt(prompt("Digite a quantidade de cartões vermelhos do seu time em relação ao  ano anterior: "));
+
+
+	var qpa = Number(prompt("Digite a quantidade de pontos do seu time em relação ao  ano anterior: "));
+     
+
+    var pontosatual1 = pontosatual(pontosatual);
+
+
+    var p2= 100* pontosatual1/qpa;
+
+
+	var percentual1 = percentual(percentual);
+
+
+	var pl3 = 100* l/la;
+
+
+	var pontoles1 = pontoles(pontoles);
+
+	var c2 = (ca*1) + (cv*3);
+
+	var c3 = (caa*1) + (cvv*3);
+
+	var c4= c2*100/c3;
+
+
+	var cart1 = cartao(cartao);
+
+	mostra("O nome do seu time é: ");
+
+	mostra(n);
+
+	pulalinha();
+  
+
+	mostra("A quantidade de pontos do time no ano atual é de: ");
+
+
+	mostra(pontosatual1);
+
+
+	pulalinha();
+
+
+	mostra("O Percentual da pontuação do ano atual do seu time, comparado ao anterior é: ");
+
+	
+	mostra(percentual1);
+
+	pulalinha();
+
+
+	mostra("O Percentual do número de lesionados do ano atual, em relação a pontuação do ano anterior é: ");
+
+
+	mostra(pontoles1);
+
+
+	pulalinha();
+
+
+	mostra("O percentual do cartões do ano atual, em relação a pontuação do ano anterior: ");
+
+
+	mostra(cart1);
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
