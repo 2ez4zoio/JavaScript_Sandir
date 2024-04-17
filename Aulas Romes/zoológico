@@ -1,0 +1,72 @@
+class Animal:
+    def __str__(self):
+        return "Animal"
+    
+    def emitir_som(self):
+        return "Este animal emite um som."
+    
+    def comer(self):
+        return "Esse animal come"
+    
+    def atividade(self):
+        return "Esse animal faz algo"
+    
+class Cachorro(Animal):
+    def __str__(self):
+        return "Cachorro"
+    
+    def emitir_som(self):
+        return "Au au!"
+    
+    def comer(self):
+        return "O cachorro come o osso"
+    
+    def atividade(self):
+        return "O cachorro corre e busca a bola"
+
+class Gato(Animal):
+    def __str__(self):
+        return "Gato"
+    
+    def emitir_som(self):
+        return "Miau!"
+    
+    def comer(self):
+        return "O gato come o rato."
+    
+    def atividade(self):
+        return "O gato dorme no sofa e no telhado"
+
+class Passaro(Animal):
+    def __str__(self):
+        return "Passaro"
+    
+    def emitir_som(self):
+        return "Piu Piu Piu"
+    
+    def comer(self):
+        return "O passaro come minhoca"
+    
+    def atividade(self):
+        return "O passaro voa de arvore em arvore"
+
+class Elefante(Animal):
+    def __str__(self):
+        return "Elefante"
+    
+    def emitir_som(self):
+        return "BRUUUUUU"
+    
+    def comer(self):
+        return "O elefante come amendoim"
+    
+    def atividade(self):
+        return "O elefante equilibra na bola"
+
+zoologico = [Cachorro(), Gato(), Passaro(), Elefante()]
+for animal in zoologico:
+    print(animal)
+    print(animal.emitir_som())
+    print(animal.comer())
+    print("-" * 50)
+    print()
