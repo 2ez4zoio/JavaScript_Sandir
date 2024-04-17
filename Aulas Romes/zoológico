@@ -68,5 +68,6 @@ for animal in zoologico:
     print(animal)
     print(animal.emitir_som())
     print(animal.comer())
+    print(animal.atividade())
     print("-" * 50)
     print()
